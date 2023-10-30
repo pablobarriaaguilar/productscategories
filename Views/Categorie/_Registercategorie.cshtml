@@ -1,0 +1,8 @@
+@model Categorie
+<h1>New Category</h1>
+<form asp-action="Create" asp-controller="Categorie" method="POST"> 
+<label asp-for="@Model.Name"></label>
+<input asp-for="@Model.Name" >
+<span asp-validation-for="@Model.Name"></span>
+<button class="btn-primary">Create</button>
+</form>

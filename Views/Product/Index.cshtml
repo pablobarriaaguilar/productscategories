@@ -1,0 +1,15 @@
+@model MyProductViewModel
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      @await Html.PartialAsync("_Registerproduct", Model.Product)
+    </div>
+    
+    <div class="col">
+       @await Html.PartialAsync("_AllProducts", Model.AllProducts)
+    </div>
+  </div>
+</div>

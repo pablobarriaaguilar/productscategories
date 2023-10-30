@@ -1,0 +1,18 @@
+@model LCategoryViewModel
+
+<h1>@Context.Session.GetString("ProductName")</h1>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      @await Html.PartialAsync("_Productcategories", Model.AllProductCategories)
+    </div>
+    <div class="col">
+     @await Html.PartialAsync("_Categories", Model.AllNoneProductCategories)
+    </div>
+  </div>
+</div>
+
+     
+    </div>

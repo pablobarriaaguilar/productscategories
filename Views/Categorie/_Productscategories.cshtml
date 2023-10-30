@@ -1,0 +1,10 @@
+
+@model List<Product>
+<div class="container">
+    <h1>All Products</h1>
+
+    @foreach (Product product in Model)
+    {
+        <h1>@product.Name</h1>
+    }
+</div>

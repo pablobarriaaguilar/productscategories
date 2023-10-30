@@ -1,0 +1,12 @@
+@model MyCategoryViewModel
+<div class="container">
+  <div class="row">
+    <div class="col">
+     @await Html.PartialAsync("_RegisterCategorie.cshtml", Model.Categorie)
+    </div>
+   
+    <div class="col-6">
+    @await Html.PartialAsync("_Allcategories.cshtml", Model.AllCategories)
+    </div>
+  </div>
+</div>
